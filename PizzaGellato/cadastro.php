@@ -13,7 +13,7 @@
 <div class="container">
         <div class="content first-content">
             <div class="firs-column">
-                <h2 class="title">Bem-Vindo, ao Jewellery Luxury Diamonds!</h2>
+                <h2 class="title">Bem-Vindo, a Pizzaria Gellatos!</h2>
                 <p class="description">kkkkkkkkkkkkkkk</p>
             </div>
             <div class="second-column">
