@@ -16,10 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <style>
-      #navbar{
-        border-top: 5px solid #fbb03b;
-        padding-top: 0;
-        margin: 0;
+      #menu{
+        padding: 0;
       }
       .container-fluid{
         background-color: #fbb03b;
@@ -29,45 +27,31 @@
       }
       .navbar{
         padding-top: 0;
+        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
       }
       .navbar h1{
         font-family: 'Ephesis', sans-serif;
         margin: 0;
         padding: 0;
       }
-      .progress-container {
-            height: 5px;
-            position: relative;
-            width: 100%;
-            background-color: #ddd;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0;
-            background-color: #4CAF50;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .carousel-item {
-            height: 300px;
-            width: 400px;
-            transition: opacity 1s ease-in-out; /* pensar nessa opção */
-        }
-
-        .carousel-item img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; /* Isso garante que a imagem cubra a área especificada */
-        }
+   
+      .carousel-container {
+        border: 3px solid #ffefd8; 
+        box-shadow: 0 0 10px  #ffefd8; 
+        margin: 0 auto;
+      }
+      .carousel-item img {
+        object-fit: cover;
+      }
     </style>
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid" id="menu">
-    <a class="navbar-brand" id="pizza_img"><img src="assents/css/images/pizzaria.png"  style="width: 250px; padding: 0; margin:0;" alt="Pizzaria & Gellato"></a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="menu">
+    <div class="container-fluid" >
+    <a class="navbar-brand" id="pizza_img"><img src="assents/css/images/pizzaria.png"  style="width: 150px; padding: 0; margin:0;" alt="Pizzaria & Gellato"></a>
       <a class="navbar-brand" href="#"><h1><strong>Pizzaria && Gellato</strong></h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -125,37 +109,30 @@
     <p style="text-align: justify;">Está pronto para uma jornada gastronômica inigualável? Inscreva-se agora e faça seu pedido para experimentar o melhor da Pizzaria && Gellato.</p>
     </div>
 
-    <div class=" col carousel slide"data-bs-ride="carousel" data-bs-interval="2000">
+    <div class=" col carousel slide carousel-container"data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assents/css/images/carrosel/pizza_sorvete.png" class="d-block w-100" alt="pizza da logo">
+      <img src="assents/css/images/carrosel/pizza_logo.png" alt="pizza da logo">
     </div>
     <div class="carousel-item">
-      <img src="assents/css/images/carrosel/pizzas_morango.png" class="d-block w-100" alt="">
+      <img src="assents/css/images/carrosel/pizza_morango.png" alt="">
     </div>
     <div class="carousel-item">
-      <img src="assents/css/images/carrosel/pizzas_velvet.png" class="d-block w-100" alt="">
+      <img src="assents/css/images/carrosel/pizza_velvet.png" alt="">
     </div>
     <div class="carousel-item">
-      <img src="assents/css/images/carrosel/pizzas.png" class="d-block w-100" alt="...">
+      <img src="assents/css/images/carrosel/pizzas.png" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assents/css/images/carrosel/pizza_morango_sorvete.png" class="d-block w-100" alt="...">
+      <img src="assents/css/images/carrosel/pizza_esfiha.png" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
     </div>
   </div>
 </div>
 </section>
 
+<footer> <?php require 'footer.php'; ?></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -1,19 +1,31 @@
 <html>
     <footer>
+        <style>
+    .container-fluid{
+        background-color: #fbb03b;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 0px;
+        color: black;
+        display: flex;
+    }
+    .container-fluid #coluna1{
+        font-weight: bold;
+    }       
+    
+    </style>
+
     <link rel="stylesheet" type="text/css" href="/assents/css/style.css">
-    <div class="container">
+    <div class="container-fluid">
         <div class="container" id="coluna1">
-            <p>Rua Florianópolis, 1000 - Bairro da Felicidade
+            <p><img src="assents/css/images/localizacao.png"> Rua Florianópolis, 1000 - Bairro da Felicidade
                 <br></p>
-            <p> Catanduvas/SP</p>
+            <p> Catanduva/SP</p>
         </div>
         <div class="container" id="coluna2">
             <p>Sobre nós</p>
             <p>Trabalhe conosco</p>
             <p>Redes Sociais</p>
-            <a></a>
-            <a></a>
-            <a></a>
         </div>
     </div>
 

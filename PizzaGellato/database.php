@@ -3,7 +3,7 @@
 global $config;
 global $db;
 
-$config['dbname'] = 'luxury_diamonds';
+$config['dbname'] = 'pizzariagellato';
 $config['host']   = 'localhost';
 $config['dbuser'] = 'root';
 $config['dbpass'] = '';
