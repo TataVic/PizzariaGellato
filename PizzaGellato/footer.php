@@ -2,7 +2,6 @@
     <footer>
         <style>
     .container-fluid{
-        background-color: #fbb03b;
         padding: 0px;
         margin: 0px;
         padding-bottom: 0px;
@@ -10,22 +9,25 @@
         display: flex;
     }
     .container-fluid #coluna1{
-        font-weight: bold;
+       justify-content: center;
     }       
+
+    footer{
+        background-color: #5f160a;
+        border-top: 2px solid #008f8d;
+    }
     
     </style>
 
     <link rel="stylesheet" type="text/css" href="/assents/css/style.css">
-    <div class="container-fluid">
+    <div class="container-fluid text-center background-color: #5f160a">
         <div class="container" id="coluna1">
-            <p><img src="assents/css/images/localizacao.png"> Rua Florianópolis, 1000 - Bairro da Felicidade
-                <br></p>
-            <p> Catanduva/SP</p>
-        </div>
-        <div class="container" id="coluna2">
-            <p>Sobre nós</p>
-            <p>Trabalhe conosco</p>
-            <p>Redes Sociais</p>
+            <br>
+            <p><img src="assents/css/images/localizacao.png">
+            <strong>Rua Florianópolis, 1000 - Bairro da Felicidade</strong></p>
+            <p><strong>Catanduva/SP</strong></p>
+            <p><strong>Pizzas && Gellatos</strong></p>
+            <p>Desenvolvido por @TataVic - 2023. </p>
         </div>
     </div>
 
