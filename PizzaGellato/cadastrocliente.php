@@ -11,24 +11,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="icon" href="assents/css/images/cadastro.png" type="image"> -->
     <?php require "head.php"?>
-    <body>
+    <body style=" background-color: #f9d69e;">
     <?php require "navbar.php"?>
-<div class="container" style="padding-top: 150px;">
-  <div class="row">
-  <div class="col-md-6" id="coluna2-cadastro"> <!-- Cadastro -->
-    <form>
-      <h3>Faça seu Cadastro</h3>
-      <div class="mb-3">
+<div class="container overflow-hidden" style="padding-top: 110px;">
+  <div class="row gy-5 justify-content-center align-items-center">
+    <div class="col-4" id="coluna2-cadastro"> <!-- Cadastro -->
+      <form  method="POST" action="adicionarcliente.php">
+        <div class="text-center" id="titulo-login"> 
+          <h2>Faça seu Cadastro</h2>
+        </div>
+      <div class="p-3" id="caixas">
+        <label for="inputNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome" placeholder="Nome" required>
+      </div>
+      <div class="p-3" id="caixas">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
       </div>
-      <div class="mb-3">
-        <label for="inputPassword" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+      <div class="p-3" id="caixas">
+        <label for="inputPassword" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required>
       </div>
-      <button type="submit" class="btn btn-success">Cadastrar</button>
-  </form>
- </div>
+      <div class="p-3" id="caixas">
+        <label for="inputdata" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="inputPassword" >
+      </div>
+      <div class="p-3" id="caixas">
+        <label for="inputcpf" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="inputcpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF: xxx.xxx.xxx-xx" >
+      </div>
+      <div class="col-4" id="coluna3-cadastro"> <!-- Outra Coluna (Adicione o conteúdo aqui) -->
+              <div class="p-3" id="caixas">
+                        <label for="inputtelefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="inputtelefone" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Telefone: xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="p-3" id="caixas">
+                        <label for="inputtelefone" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="inputtelefone" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Telefone: xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="p-3" id="caixas">
+                        <label for="inputtelefone" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="inputtelefone" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Telefone: xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="p-3" id="caixas">
+                        <label for="inputtelefone" class="form-label">Estado</label>
+                        <input type="text" class="form-control" id="inputtelefone" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Telefone: xxx.xxx.xxx-xx">
+                    </div>
+                </div>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+      </form>
+   </div> 
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

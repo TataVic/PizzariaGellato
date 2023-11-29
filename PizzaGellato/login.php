@@ -5,7 +5,7 @@
 
 <div class="container" style="padding-top: 110px;">
   <div class="row justify-content-center align-items-center">
-    <div class="col-lg-8 col-md-6 col-sm-12 " id="coluna1-login"> <!-- Login -->
+    <div class="col-lg-8 col-md-6 col-sm-12" id="coluna1-login"> <!-- Login -->
         <form class="flex-column d-flex "> 
                 <div class="text-center" id="titulo-login"> 
                 <h2>Faça seu Login</h2>

@@ -35,8 +35,15 @@
 #coluna2-cadastro{
     background-color: #fbb03b;
     border-radius: 50px;
-    padding: 50px;
+    padding: 30px;
+    padding-top: 5px;
+    width: 95%;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px #fbb03b;
+}
+#coluna2-login .button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
