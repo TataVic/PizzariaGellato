@@ -13,8 +13,8 @@
     }       
 
     footer{
-        background-color: #5f160a;
-        border-top: 2px solid #008f8d;
+        border-top: 3px solid #fbb03b;
+        box-shadow: 0 0 15px #fbb03b;
     }
     
     </style>
