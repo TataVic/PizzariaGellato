@@ -26,10 +26,10 @@
       .carousel-item img {
         object-fit: cover;
       }
-      #buttons button{
+      #buttons .btn{
         background-color: #fbb03b;
       }
-      #buttons button:hover{
+      #buttons .btn:hover{
         background-color: #F6BC60;
       }
     </style>
@@ -69,9 +69,9 @@
   </div>
 </div>
 
-<div class="d-grid gap-2 col-6 mx-auto text-center" id="buttons" style="padding-top: 100px; padding-bottom:0px; height:250px;"> <!-- buttons de login | cadastro -->
-    <button type="button" class="btn" href="login.php">Realizar Login</button>
-    <button type="button" class="btn" href="#" ><strong>Realizar Cadastro</strong></button>
+<div class="d-grid gap-2 col-6 mx-auto text-center" id="buttons" style="padding-top: 100px; padding-bottom:0px; height:200px;"> <!-- buttons de login | cadastro -->
+    <a class="btn justify-content-center align-items-center" href="login.php"><strong>Realizar Login</strong></a> 
+    <a class="btn justify-content-center align-items-center" href="cadastrocliente.php"><strong>Realizar Cadastro</strong></a> 
 </div>
 </section>
 

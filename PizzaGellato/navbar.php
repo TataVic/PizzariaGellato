@@ -28,7 +28,8 @@
               Produtos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cadastroproduto.php">Cadastrar o produto</a></li>
+              <li><a class="dropdown-item" href="cadastroproduto.php">Cadastrar Produtos</a></li>
+              <li><a class="dropdown-item" href="ListProduto.php">Listar Produtos</a></li>
             </ul>
           </li>
         </ul>

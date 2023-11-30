@@ -19,3 +19,7 @@
     padding: 0;
   }
 
+  .navbar{
+    border-bottom: 3px solid #fbb03b;
+    box-shadow: 0 0 15px #fbb03b;
+    }

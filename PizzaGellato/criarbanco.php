@@ -1,8 +1,8 @@
 <?php
-$servidor = 'seu_servidor';
-$usuario = 'seu_usuario';
-$senha = 'sua_senha';
-$nomeBanco = 'nome_do_banco';
+$servidor = 'localhost';
+$usuario = 'root';
+$senha = '';
+$nomeBanco = 'pizzariagellato';
 
 // Conectar ao MySQL
 $conexao = new mysqli($servidor, $usuario, $senha, $nomeBanco);
@@ -12,46 +12,77 @@ if ($conexao->connect_error) {
     die("Conexão falhou: " . $conexao->connect_error);
 }
 
-// Consulta SQL para criar o banco de dados
-$consultaCriarBanco = "CREATE DATABASE IF NOT EXISTS $nomeBanco";
-
-// Executar a consulta
-if ($conexao->query($consultaCriarBanco) === TRUE) {
-    echo "Banco de dados criado com sucesso";
-} else {
-    echo "Erro ao criar o banco de dados: " . $conexao->error;
-}
-
-// Selecionar o banco de dados
-$conexao->select_db($nomeBanco);
-
-// Consulta SQL para criar uma tabela de exemplo
-$consultaCriarTabela = "
-    CREATE TABLE IF NOT EXISTS usuarios (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(50) NOT NULL,
-        email VARCHAR(50) NOT NULL
+// Consulta SQL para criar a tabela 'compras'
+$consultaCriarTabelaCompras = "
+    CREATE TABLE IF NOT EXISTS `compras` (
+        `ID` int NOT NULL AUTO_INCREMENT,
+        `FK_cliente` int NOT NULL,
+        `FK_produto` int NOT NULL,
+        `quantidade` int NOT NULL,
+        `preco_unitario` float NOT NULL,
+        `preco_total` float NOT NULL,
+        `status_entrega` varchar(3) NOT NULL,
+        `metodo_pagamento` varchar(200) NOT NULL,
+        `data_compra` date NOT NULL,
+        `horas_compra` timestamp(6) NOT NULL,
+        `observacao` varchar(100) DEFAULT NULL,
+        PRIMARY KEY (`ID`),
+        KEY `FK_cliente` (`FK_cliente`),
+        KEY `FK_produto` (`FK_produto`)
     )";
 
 // Executar a consulta
-if ($conexao->query($consultaCriarTabela) === TRUE) {
-    echo "Tabela criada com sucesso";
+if ($conexao->query($consultaCriarTabelaCompras) === TRUE) {
+    echo "Tabela 'compras' criada com sucesso\n";
 } else {
-    echo "Erro ao criar a tabela: " . $conexao->error;
+    echo "Erro ao criar a tabela 'compras': " . $conexao->error . "\n";
 }
 
-// Exemplo de consulta para adicionar um usuário
-$nomeUsuario = 'João';
-$emailUsuario = 'joao@example.com';
+// Consulta SQL para criar a tabela 'produtos'
+$consultaCriarTabelaProdutos = "
+    CREATE TABLE IF NOT EXISTS `produtos` (
+        `ID` int NOT NULL AUTO_INCREMENT,
+        `FK_compras` int NOT NULL,
+        `nome_produto` varchar(255) NOT NULL,
+        `preco_unitario` float NOT NULL,
+        `estoque_qtd` int NOT NULL,
+        `categoria_produto` varchar(100) NOT NULL,
+        `fornecedor` varchar(100) NOT NULL,
+        `data_inclusao` datetime NOT NULL,
+        PRIMARY KEY (`ID`),
+        KEY `FK_compras` (`FK_compras`)
+    )";
 
-$consultaAdicionarUsuario = "
-    INSERT INTO usuarios (nome, email)
-    VALUES ('$nomeUsuario', '$emailUsuario')";
-
-if ($conexao->query($consultaAdicionarUsuario) === TRUE) {
-    echo "Usuário adicionado com sucesso";
+// Executar a consulta
+if ($conexao->query($consultaCriarTabelaProdutos) === TRUE) {
+    echo "Tabela 'produtos' criada com sucesso\n";
 } else {
-    echo "Erro ao adicionar o usuário: " . $conexao->error;
+    echo "Erro ao criar a tabela 'produtos': " . $conexao->error . "\n";
+}
+
+// Consulta SQL para criar a tabela 'clientes'
+$consultaCriarTabelaClientes = "
+    CREATE TABLE IF NOT EXISTS `clientes` (
+        `ID` int NOT NULL AUTO_INCREMENT,
+        `FK_compra` int NOT NULL,
+        `nome` varchar(100) NOT NULL,
+        `email` varchar(200) NOT NULL,
+        `senha` varchar(10) NOT NULL,
+        `data_nascimento` date NOT NULL,
+        `cpf` int NOT NULL,
+        `telefone` int NOT NULL,
+        `endereco` varchar(255) NOT NULL,
+        `cidade` varchar(200) NOT NULL,
+        `estado` varchar(2) NOT NULL,
+        PRIMARY KEY (`ID`),
+        KEY `FK_compra` (`FK_compra`)
+    )";
+
+// Executar a consulta
+if ($conexao->query($consultaCriarTabelaClientes) === TRUE) {
+    echo "Tabela 'clientes' criada com sucesso\n";
+} else {
+    echo "Erro ao criar a tabela 'clientes': " . $conexao->error . "\n";
 }
 
 // Fechar a conexão
