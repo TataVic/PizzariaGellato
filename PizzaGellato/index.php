@@ -30,23 +30,23 @@
         background-color: #fbb03b;
       }
       #buttons button:hover{
-        background-color: #f9d69e;
+        background-color: #F6BC60;
       }
     </style>
 </head>
-<body>
+<body style=" background-color: #f9d69e;">
 <?php require 'navbar.php'; ?>
 <section style="padding-top: 150px; margin-bottom:150px;">
 <div class="container text-center">
   <div class="row justify-content-center align-items-center">
-    <div class="col-lg-8 col-md-6 col-sm-12 " >
+    <div class="col-sm-6" >
     <h2>Descubra uma Experiência Única: Pizzas com Gellato!</h2>
     <p style="text-align: justify;">Bem-vindo à Pizzaria && Gellato, o lugar onde a tradição da pizza se encontra com a deliciosa extravagância do gelato. Explore uma combinação única de sabores e recheios que transformam cada mordida em uma experiência memorável.</p>
     <p style="text-align: justify;">Nossas pizzas cuidadosamente preparadas, combinadas com a suavidade do gelato, são uma explosão de sabor que você não encontrará em nenhum outro lugar da região. Não perca a oportunidade de se deliciar com a culinária que combina a tradição italiana com a criatividade contemporânea.</p>
     <p style="text-align: justify;">Está pronto para uma jornada gastronômica inigualável? Inscreva-se agora e faça seu pedido para experimentar o melhor da Pizzaria && Gellato.</p>
     </div>
 
-    <div class="col-lg-8 col-md-6 col-sm-12 carousel slide carousel-container d-flex justify-content-center align-items-center " id="carrossel" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 50px;padding-bottom: 10px;"> <!-- Carrossel de imagens -->
+    <div class="col-sm-6 carousel slide carousel-container d-flex justify-content-center align-items-center " id="carrossel" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 50px;padding-bottom: 10px;"> <!-- Carrossel de imagens -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assents/css/images/carrosel/pizza_logo.png" alt="pizza da logo" class="img-fluid">
@@ -70,8 +70,8 @@
 </div>
 
 <div class="d-grid gap-2 col-6 mx-auto text-center" id="buttons" style="padding-top: 100px; padding-bottom:0px; height:250px;"> <!-- buttons de login | cadastro -->
-    <button type="button" class="btn" href="login.php" ><strong>Realizar Login</strong></button>
-    <button type="button" class="btn" href="cadastrocliente.php" ><strong>Realizar Cadastro</strong></button>
+    <button type="button" class="btn" href="login.php">Realizar Login</button>
+    <button type="button" class="btn" href="#" ><strong>Realizar Cadastro</strong></button>
 </div>
 </section>
 

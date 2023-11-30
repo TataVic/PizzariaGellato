@@ -18,7 +18,9 @@
             <label for="inputPassword" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
             </div>
-            <a href="cadastrocliente.php">Cadastrar-se</a>
+            <div class="mb-3" id="caixas">
+              <a href="cadastrocliente.php">Cadastrar-se</a>
+            </div>
         <button type="submit" class="btn btn-success " >Entrar</button>
         </form>
     </div>
