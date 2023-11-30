@@ -1,0 +1,79 @@
+
+MODELO MVC (MODEL-VIEW-CONTROLLER)
+app/Controller/: Contém os controladores, que lidam com a lógica da aplicação e interagem com os modelos e visões.
+app/Model/: Contém os modelos, que representam a camada de dados da aplicação.
+app/View/: Contém as visões, que representam a interface do usuário.
+app/Config/: Contém arquivos de configuração, como o arquivo de configuração do banco de dados.
+app/Routes/: Contém as definições de rotas para a aplicação.
+app/Helpers/: Contém arquivos de suporte, como scripts para criar o banco de dados e scripts de execução.
+public/: Contém recursos acessíveis publicamente, como folhas de estilo, scripts e imagens.
+Templates/: Contém arquivos de modelo, como cabeçalho, navegação e rodapé, que são incluídos em várias páginas.
+index.php: Ponto de entrada da aplicação.
+
+OBS: index.php:
+
+Este é o ponto de entrada da sua aplicação. Ele incluirá os arquivos de configuração necessários e roteará as solicitações para os controladores apropriados.
+Routes:
+
+O arquivo routes.php pode ser usado para definir as rotas da aplicação, direcionando as solicitações para os controladores correspondentes.
+Config:
+
+A pasta Config contém arquivos relacionados à configuração da aplicação, como o arquivo de configuração do banco de dados.
+Helpers:
+
+A pasta Helpers contém scripts de suporte, como scripts para criar o banco de dados e scripts de execução.
+
+ESTRUTURA REALIZADA:
+
+Estrutura de Pastas
+app/
+Controller/
+adicionarclienteController.php
+cadastroclienteController.php
+cadastroprodutoController.php
+clientesController.php
+ListcomprasController.php
+ListProdutosController.php
+loginController.php
+produtosController.php
+Model/
+model.php
+View/
+adicionarclienteView.php
+cadastroclienteView.php
+cadastroprodutoView.php
+clientesView.php
+ListcomprasView.php
+ListProdutosView.php
+loginView.php
+produtosView.php
+Config/
+database.php (configuração do banco de dados)
+Routes/
+routes.php (definição de rotas)
+Helpers/
+criarbanco.php
+run.php
+Public/
+css/
+style.css
+stylenavbar.css
+js/
+img/
+Templates/
+head.php
+navbar.php
+footer.php
+index.php
+
+Descrição dos Diretórios
+app/Controller/: Contém os controladores, que lidam com a lógica da aplicação e interagem com os modelos e visões.
+app/Model/: Contém os modelos, que representam a camada de dados da aplicação.
+app/View/: Contém as visões, que representam a interface do usuário.
+app/Config/: Contém arquivos de configuração, como o arquivo de configuração do banco de dados.
+app/Routes/: Contém as definições de rotas para a aplicação.
+app/Helpers/: Contém arquivos de suporte, como scripts para criar o banco de dados e scripts de execução.
+public/: Contém recursos acessíveis publicamente, como folhas de estilo, scripts e imagens.
+Templates/: Contém arquivos de modelo, como cabeçalho, navegação e rodapé, que são incluídos em várias páginas.
+index.php: Ponto de entrada da aplicação.
+
