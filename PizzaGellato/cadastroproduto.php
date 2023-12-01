@@ -15,31 +15,27 @@
         </div>
        <div class="p-3">
         <label for="formFile" class="form-label">Imagem/Foto:</label>
-        <input class="form-control" type="file" id="formFile">
+        <input class="form-control" type="file" id="formFile" name="imagem">
       </div>
       <div class="p-3" id="caixas"> <!-- terminar os names -->
         <label for="inputNome" class="form-label">Nome do produto:</label>
         <input type="text" class="form-control" id="inputNome" name="nome_produto" placeholder="Nome" required>
       </div>
       <div class="p-3" id="caixas">
-        <label for="inputpreco" class="form-label">Preço Unitário:</label>
-        <input type="text" class="form-control" id="inputpreco" name="preco_unitario"  placeholder="CPF: xxx.xxx.xxx-xx" >
+        <label for="inputpreco" class="form-label">Preço ($):</label>
+        <input type="text" class="form-control" id="inputpreco" name="preco_unitario"  placeholder="Preço" >
       </div>
-      
       <div class="p-3" id="caixas">
         <label for="inputquantidade" class="form-label">Quantidade: </label>
-        <input type="text" class="form-control" id="inputquantidade" name="categoria_produto" placeholder="Telefone / Celular">
+        <input type="number" class="form-control" id="inputquantidade" name="quantidade_produto" placeholder="Quantidade disponível">
       </div>
       <div class="p-3" id="caixas">
           <label for="inputdescricao" class="form-label">Descrição:</label>
-          <input type="text" class="form-control" id="inputdescricao" name="endereco"  placeholder="Endereço">
+          <input type="text" class="form-control" id="inputdescricao" name="descricao_produto"  placeholder="Descrição do produto">
       </div>
     <!-- data da inclusão ser automatica -->
-      <div class="mb-3" id="caixas">
-              <a href="cadastrocliente.php">Logar-se</a>
-      </div>
       <a class="btn btn-secondary" href="index.php">Voltar</a>
-        <button type="submit" class="btn btn-success">Cadastrar</button>
+        <button type="submit" class="btn btn-success">Cadastrar Produto</button>
       </form>
    </div> 
   </div>
