@@ -6,15 +6,10 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Cliente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="icon" href="assents/css/images/cadastro.png" type="image"> -->
-    <?php require "head.php"?>
-    <body style=" background-color: #f9d69e;">
-    <?php require "navbar.php"?>
+<?php require "head.php"?>
+<body style=" background-color: #f9d69e;">
+<?php require "navbar.php"?>
 <div class="container overflow-hidden" style="padding-top: 110px;">
   <div class="row gy-5 justify-content-center align-items-center">
     <div class="col-4" id="coluna2-cadastro"> <!-- Cadastro -->

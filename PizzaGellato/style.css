@@ -59,3 +59,10 @@
     align-items: center;
     text-align: center;
 }
+
+/* ListProdutos */
+#titulo-list {
+    font-family: 'Ephesis', sans-serif;
+    background-color: #fbb03b;
+    box-shadow: 0 0 20px #fbb03b;
+}

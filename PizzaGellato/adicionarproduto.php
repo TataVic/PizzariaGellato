@@ -1,19 +1,20 @@
 <?php
-    $nome              = $_POST['nome'];
-    /* $idade     = intval($_POST['idade']); */
-    $email             = $_POST['email'];
-    $senha             = $_POST['senha'];
-    $data_nascimento   = $_POST['data_nascimento'];
-    $cpf               = $_POST['cpf'];
-    $telefone          = $_POST['telefone'];
-    $endereco          = $_POST['endereco'];
-    $cidade            = $_POST['cidade'];
-    $estado            = $_POST['estado'];
+    $nome_produto              = $_POST['nome_produto'];
+    $preco_unitario            = floatval($_POST['preco_unitario']);
+    $quantidade_produto        = intval($_POST['quantidade_produto']); 
+    $descricao_produto         = $_POST['descricao_produto'];
 
-if(!isset($POST['nome'])){ //checa o método e não permitir incluir após eles
+if(!isset($POST['nome_produto'])){ //checa o método e não permitir incluir após eles
     require  'run.php';
-    $cliente = new Clientes();
-    $cliente->adicionar($nome, $email, $senha, $data_nascimento, $cpf, $telefone, $endereco, $cidade, $estado);
+    $produtos = new Produtos();
+    $dados->adicionar($nome_produto,$preco_unitario, $quantidade_produto,$descricao_produto);
+}
+
+if(isset($_FILES['imagem']['name']) && !empty($_FILES['imagem']['name'])){
+    $pasta = 'assets/produtos/';
+    $arquivo = md5(date('Ymdhis').rand(111,999)).'.'.PATHINFO($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+    move_uploaded_file($_FILES['imagem']['tmp_name'], $pasta.$arquivo);
+    $produtos->imagem($ID, $pasta.$arquivo);
 }
 
 header("Location: index.php");
