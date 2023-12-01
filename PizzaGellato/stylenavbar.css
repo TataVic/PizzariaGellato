@@ -23,3 +23,19 @@
     border-bottom: 3px solid #fbb03b;
     box-shadow: 0 0 15px #fbb03b;
     }
+
+    /* customização dos dropsdowns da navbar */
+    /* Cor de fundo da caixa de dropdown */
+#caixa-opcoes {
+  background-color: #f9d69e !important;
+}
+
+/* Cor dos itens do dropdown ao passar o mouse */
+.dropdown-menu a:hover {
+  background-color: #eac25f !important;
+}
+
+/* Cor do texto nos itens do dropdown */
+/* .dropdown-menu a {
+  color: #your_text_color;
+} */

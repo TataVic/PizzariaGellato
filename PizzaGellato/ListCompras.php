@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+<html lang="pt-br">
+    
+<?php require "head.php"?>
+ <body style=" background-color: #f9d69e;">
+ <?php require "navbar.php"?>
+
     
 </body>
 </html>
