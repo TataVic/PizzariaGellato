@@ -3,7 +3,9 @@
     $preco_unitario            = floatval($_POST['preco_unitario']);
     $quantidade_produto        = intval($_POST['quantidade_produto']); 
     $descricao_produto         = $_POST['descricao_produto'];
-
+    
+    require  'run.php';
+    $produtos = new Produtos();
 if(!isset($POST['nome_produto'])){ //checa o método e não permitir incluir após eles
     require  'run.php';
     $produtos = new Produtos();
