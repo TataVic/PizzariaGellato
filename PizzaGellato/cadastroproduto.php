@@ -36,7 +36,7 @@
           <input type="text" class="form-control" id="inputdescricao" name="descricao_produto"  placeholder="Descrição do produto">
       </div>
     <!-- data da inclusão ser automatica -->
-      <a class="btn btn-secondary" href="index.php">Voltar</a>
+        <a class="btn btn-secondary" href="index.php">Voltar</a>
         <button type="submit" class="btn btn-success">Cadastrar Produto</button>
       </form>
    </div> 
@@ -44,4 +44,3 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>
