@@ -3,7 +3,6 @@
 		<link rel="icon" href="assents/css/images/pizza.png" type="image">
 		<title>Pizzaria Gellatis</title>
 		<meta charset="utf-8">		
-		<meta content="width=device-width, initia-scale=1.0, user-scalabre=0" name="viewport">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -35,7 +35,7 @@
         </ul>
           <div class="nav-item" id="btn-menu">
             <a href="login.php" id="user"><img src="assents/css/images/usuario.png"></a>
-            <a id="carrinho"><img src="assents/css/images/carrinho.png"></a>
+            <a id="carrinho" href="carinho.php"><img src="assents/css/images/carrinho.png"></a>
           </div>
         
       </div>

@@ -1,6 +1,6 @@
 <html>
-    <footer>
-        <style>
+    <footer >
+    <style>
     .container-fluid{
         padding: 0px;
         margin: 0px;
@@ -15,11 +15,12 @@
     footer{
         border-top: 3px solid #fbb03b;
         box-shadow: 0 0 15px #fbb03b;
+        margin-top: 50px;
     }
     
     </style>
 
-    <link rel="stylesheet" type="text/css" href="/assents/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <div class="container-fluid text-center background-color: #5f160a">
         <div class="container" id="coluna1">
             <br>
