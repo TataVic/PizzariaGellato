@@ -21,7 +21,7 @@ $produtos = $produtos->getAll();
                             <div class="card-body d-flex flex-column align-items-center">
                                 <div class="text-center">
                                     <?php if (!empty($produto['imagem'])): ?>
-                                        <img src="<?php echo $produto['imagem']; ?>"class="card-img-top img-fluid" alt="Imagem do Produto" style="max-height: 150px; max-width: 100%;">
+                                        <img src="assents/produtos<?php echo $produto['imagem']; ?>"class="card-img-top img-fluid" alt="Imagem do Produto" style="max-height: 150px; max-width: 100%;">
                                          <?php else: ?>
                                         <img src="assents/css/images/img_default.png" class="card-img-top img-fluid img-produto" alt="Imagem Padrão" style="max-height: 150px; max-width: 100%;">
                                     <?php endif; ?>
