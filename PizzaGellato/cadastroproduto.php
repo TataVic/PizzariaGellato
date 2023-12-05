@@ -17,7 +17,7 @@
         </div>
        <div class="p-3">
         <label for="imagem" class="form-label">Imagem/Foto:</label>
-        <input class="form-control" type="file" id="imagem" name="imagem" accept="images/*"  placeholder="Imagem do Produto">
+        <input class="form-control" type="file" id="imagem" name="imagem"  placeholder="Imagem do Produto">
       </div>
       <div class="p-3" id="caixas"> <!-- terminar os names -->
         <label for="inputNome" class="form-label">Nome do produto:</label>
