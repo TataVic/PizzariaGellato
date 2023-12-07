@@ -71,8 +71,8 @@
         </div>
       </div>
       
-      <div class="mb-3" id="caixas">
-              <a href="cadastrocliente.php">Logar-se</a>
+      <div class="mb-3" id="caixas-button">
+          Já Cadastrado? <a href="login.php">Clique aqui</a> para Logar-se
       </div>
       <a class="btn btn-secondary" href="index.php">Voltar</a>
         <button type="submit" class="btn btn-success">Cadastrar</button>

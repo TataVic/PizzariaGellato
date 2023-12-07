@@ -27,7 +27,7 @@ $produtos = $produtos->getAll();
                                     <?php endif; ?>
                                 </div>
                                 <div class="card-body d-flex flex-column align-items-center">
-                                    <h5 class="card-title"><?php echo $produto['nome_produto']; ?> </h5>
+                                    <h5 class="card-title text-center"><?php echo $produto['nome_produto']; ?> </h5>
                                     <!-- Nome do Produto -->
                                     <p class="card-text">
                                         Descrição: <?php echo $produto['descricao_produto']; ?>
