@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="menu">
   <div class="container-fluid">
       <a class="navbar-brand" id="pizza_img"><img src="assents/css/images/pizzaria.png"  style="width: 150px; padding: 0; margin:0;" alt="Pizzaria & Gellato"></a>
-      <a class="navbar-brand" href="#"><h1><strong>Pizzaria && Gellato</strong></h1></a>
+      <a class="navbar-brand" href="index.php"><h1><strong>Pizzaria && Gellato</strong></h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +34,8 @@
           </li>
         </ul>
           <div class="nav-item" id="btn-menu">
-            <a href="login.php" id="user"><img src="assents/css/images/usuario.png"></a>
+            <a href="cadastrocliente.php" id="cadastrar"><img src="assents/css/images/add-user.png"></a>
+            <a href="login.php" id="user"><img src="assents/css/images/user.png"></a>
             <a id="carrinho" href="carrinho.php"><img src="assents/css/images/carrinho.png"></a>
           </div>
         

@@ -46,16 +46,16 @@
           <img src="assents/css/images/carrosel/pizza_logo.png" alt="pizza da logo" class="img-fluid">
         </div>
           <div class="carousel-item">
-            <img src="assents/css/images/carrosel/pizza_morango.png" alt="" class="img-fluid">
+            <img src="assents/css/images/carrosel/pizza_morango.png" alt="Pizza de morango e sorvete" class="img-fluid">
           </div>
           <div class="carousel-item">
-            <img src="assents/css/images/carrosel/pizza_velvet.png" alt="" class="img-fluid">
+            <img src="assents/css/images/carrosel/pizza_velvet.png" alt="Pizza Red Velvet" class="img-fluid">
           </div>
           <div class="carousel-item">
-            <img src="assents/css/images/carrosel/pizzas.png" alt="..." class="img-fluid">
+            <img src="assents/css/images/carrosel/pizzas.png" alt="Pizza" class="img-fluid">
           </div>
           <div class="carousel-item">
-            <img src="assents/css/images/carrosel/pizza_esfiha.png" alt="..." class="img-fluid">
+            <img src="assents/css/images/carrosel/pizza_esfiha.png" alt="Pizza de estilo esfiha" class="img-fluid">
           </div>
         </div>
       </div>
