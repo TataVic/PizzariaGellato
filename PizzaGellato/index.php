@@ -1,10 +1,14 @@
 <?php
-    require 'run.php';
-  /*   $pessoa = new Cliente();
-    $dados = $pessoa->getAll(); */
+ session_start();
+ if (!isset($_SESSION['logado'])) {
+  // Redireciona para o index.php apenas se não estiver já na página
+  if (basename($_SERVER['PHP_SELF']) !== 'index.php') {
+      header("Location: index.php");
+      exit();
+  }
+}
+
 ?>
- 
-  
 
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -23,14 +23,19 @@
             </a>
             <ul class="dropdown-menu" id="caixa-opcoes">
               <li><a class="dropdown-item" href="cadastroproduto.php">Cadastrar Produtos</a></li>
-              <li><a class="dropdown-item" href="ListProdutos.php">Listar Produtos</a></li>
+              <li><a class="dropdown-item" href="carrinho.php">Listar Produtos</a></li>
             </ul>
           </li>
         </ul>
           <div class="nav-item" id="btn-menu">
             <a href="cadastrocliente.php" id="cadastrar"><img src="assents/css/images/add-user.png"></a>
-            <a href="login.php" id="user"><img src="assents/css/images/user.png"></a>
-            <a id="carrinho" href="ListCompras.php"><img src="assents/css/images/carrinho.png"></a>
+            <a href="login.php" id="user"><img src="assents/css/images/user.png"></a><!--  -->
+          <?php
+          if (isset($_SESSION['logado']) && $_SESSION['logado']) {
+              echo '<a href="deslogar.php" id="logout"><img src="assents/css/images/logout.png"></a>';
+          }
+          ?>
+            <a id="carrinho" href="carrinho.php"><img src="assents/css/images/carrinho.png"></a>
           </div>
         
       </div>

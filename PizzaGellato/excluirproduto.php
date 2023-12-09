@@ -8,6 +8,6 @@ require 'Produtos.php';
 		$produtos->excluir($ID);
 	}	
 
-header("Location: ListProdutos.php");
+header("Location: carrinho.php");
 exit;
 ?>
