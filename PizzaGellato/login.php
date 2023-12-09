@@ -21,7 +21,7 @@
             <div class="mb-3" id="caixas-button">
               Ainda não é cadastrado? <a href="cadastrocliente.php">Clique aqui</a> para se cadastrar-se
             </div>
-        <button type="submit" class="btn btn-success " >Entrar</button>
+        <button type="submit" class="btn btn-success">Entrar</button>
         </form>
     </div>
   </div>

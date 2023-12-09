@@ -17,12 +17,6 @@
           <li class="nav-item">
             <a class="nav-link" href="ListProdutos.php">Cardápio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://w.app/PizzariaGellato">Contato</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nós</a>
-          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Produtos
@@ -36,7 +30,7 @@
           <div class="nav-item" id="btn-menu">
             <a href="cadastrocliente.php" id="cadastrar"><img src="assents/css/images/add-user.png"></a>
             <a href="login.php" id="user"><img src="assents/css/images/user.png"></a>
-            <a id="carrinho" href="carrinho.php"><img src="assents/css/images/carrinho.png"></a>
+            <a id="carrinho" href="ListCompras.php"><img src="assents/css/images/carrinho.png"></a>
           </div>
         
       </div>

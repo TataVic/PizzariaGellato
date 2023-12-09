@@ -42,10 +42,17 @@ $produtos = $produtos->getAll();
                                         <!-- Preço do produto -->
                                     </ul>
                                     <div class="card-body  justify-content-center my-3" style="margin: 5px; padding: 10px;">
-                                        <a href="excluirproduto.php?ID=<?php echo $produto['ID']; ?>"
+                                    <form action="adicionarCarrinho.php" method="post">
+                                        <a href="adicionarcarrinho.php?ID=<?php echo $produto['ID']; ?>"
                                             onclick="return confirm('Deseja excluir esse produto?');"
                                             class="btn btn-danger">Excluir</a>
-                                        <a href="carrinho.php" class="btn btn-success">Comprar</a>
+                                        <input type="hidden" name="ID" value="<?php echo $produto['ID'];?>">
+                                        <button type="submit" class="btn btn-success" name="comprar">Comprar</button>
+                                    </form>        
+                                    
+                                    
+                                 
+        
                                     </div>
                                 </div>
                             </div>
