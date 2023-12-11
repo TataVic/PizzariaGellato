@@ -1,8 +1,9 @@
 <?php
 require 'run.php';
 $produtos = new Produtos();
+session_start();
 
-if (isset($_POST['comprar'])) {
+if (isset($_POST['adicionar'])) {
     if (isset($_POST['ID'])) {
         $ID = $_POST['ID'];
 
@@ -12,28 +13,31 @@ if (isset($_POST['comprar'])) {
         if (!empty($_SESSION['carrinho'])) {
             foreach ($_SESSION['carrinho'] as &$item) {
                 if ($item['ID'] == $ID) {
-                    $item['quantidade']++;
+                    $novo_valor = $_POST['quantidade']; 
+                    $item['quantidade'] += $novo_valor;
                     $produto_existente = true;
+                   
                     break;
                 }
             }
         }
 
+        $quantidade = $_POST['quantidade'];
+
         if (!$produto_existente) {
+           
+
             $_SESSION['carrinho'][] = [
                 'ID' => $produto_info['ID'],
+                'imagem' => $produto_info['imagem'],
                 'nome_produto' => $produto_info['nome_produto'],
                 'preco_unitario' => $produto_info['preco_unitario'],
-                'quantidade_produto' => 1
+                'quantidade' => $quantidade
             ];
         }
 
-        header("Location: carrinho.php");
-        exit();
-    } else {
-        echo "ID do produto não fornecido.";
     }
-} else {
-    echo "Parâmetro 'comprar' não enviado.";
 }
+        header("Location: ListProdutos.php");
+        exit();
 ?>

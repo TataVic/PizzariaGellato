@@ -13,7 +13,7 @@ if (isset($_SESSION['carrinho'])) {
         $db->beginTransaction();
         
         foreach ($_SESSION['carrinho'] as $item) {
-            $NomeProduto = $item['nome'];
+            $NomeProduto = $item['nome_produto'];
             $quantidadeComprada = $item['quantidade'];
         
             // Verifica se há estoque suficiente
@@ -22,25 +22,19 @@ if (isset($_SESSION['carrinho'])) {
             $resultado->execute();
         
             if ($resultado === false) {
-                $db->rollBack();
-                echo "Erro ao executar a consulta SQL.";
-                exit();
+                throw new Exception("Erro ao executar a consulta SQL.");
             }
         
             $produto = $resultado->fetch(PDO::FETCH_ASSOC);
         
             if (!$produto) {
-                $db->rollBack();
-                echo "Produto não encontrado: $NomeProduto";
-                exit();
+                throw new Exception("Produto não encontrado: $NomeProduto");
             }
         
             $quantidadeDisponivel = $produto['quantidade_produto'];
         
             if ($quantidadeComprada > $quantidadeDisponivel) {
-                $db->rollBack();
-                echo "Erro: Não há estoque suficiente para o produto com nome $NomeProduto.";
-                exit();
+                throw new Exception("Erro: Não há estoque suficiente para o produto com nome $NomeProduto.");
             }
         
             $novaQuantidade = $quantidadeDisponivel - $quantidadeComprada;
@@ -54,7 +48,7 @@ if (isset($_SESSION['carrinho'])) {
 
         unset($_SESSION['carrinho']);
 
-        echo'<script>alert("Compra efetuada!"); window.location.href = "index.php";</script>';
+        echo '<script>alert("Compra efetuada!"); window.location.href = "index.php";</script>';
         exit();
     } catch (Exception $erro) {
         $db->rollBack();

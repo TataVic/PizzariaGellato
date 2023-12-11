@@ -23,7 +23,6 @@
             </a>
             <ul class="dropdown-menu" id="caixa-opcoes">
               <li><a class="dropdown-item" href="cadastroproduto.php">Cadastrar Produtos</a></li>
-              <li><a class="dropdown-item" href="carrinho.php">Listar Produtos</a></li>
             </ul>
           </li>
         </ul>
