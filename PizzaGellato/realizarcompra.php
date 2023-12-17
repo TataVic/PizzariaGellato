@@ -14,7 +14,7 @@ $produtos = $produtos->getAll();
     <div class="text-center" id="titulo-login">
         <h2>Finalização da compra</h2>
     </div>
-        <div class="container-fluid" style="padding: 20px;">
+        <div id="realizarcompra" class="container-fluid" style="padding: 20px;">
         <div class="row">
         <div class="col-md-6" id="caixas">
             <label>Endereço:</label>

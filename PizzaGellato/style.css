@@ -73,3 +73,9 @@
 #caixas-button a{
     color: black;
 }
+
+/* tela do realizar compra - estilização */
+#realizarcompra{
+    border-radius: 15px;
+    padding: 5px;
+}
