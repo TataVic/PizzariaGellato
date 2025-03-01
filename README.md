@@ -1,7 +1,7 @@
 # PizzariaGellato
-Site em desenvolvimento de Pizzaria &amp;&amp; Gellato 
+Site em desenvolvimento de Pizzaria &amp;&amp; Gellato  -> para aprendizadem da matéria de Desenvolvimento Web
 
-Utilizando as tecnologias HTML, CSS e PHP; 
+Utilizando as tecnologias HTML, CSS, PHP e WampServer; 
 
 #### Atender esses requisitos: 
 - Cadastro de Produtos Completo com valor;
