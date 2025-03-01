@@ -11,4 +11,4 @@ Utilizando as tecnologias HTML, CSS e PHP;
 - Fechar Compra;
 
 
-Desenvolvido com amor by Tata Vic❤️
+<p align="center">Desenvolvido com amor by Tata Vic❤️</p>
